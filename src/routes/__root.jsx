@@ -13,8 +13,8 @@ export const Route = createRootRoute({
 function RootLayout() {
   let { sideBar } = useSelector((state) => state.navbar)
   return (
-    <main className="w-screen h-screen ">
-      <div className={`w-screen h-screen absolute bg-black z-10 pointer-events-none ${sideBar ? "opacity-50" : "opacity-0"} transition duration-500  overflow-hidden`}></div>
+    <main className="w-screen h-screen">
+      <div className={`w-screen h-screen absolute bg-black z-10 pointer-events-none ${sideBar ? "opacity-50" : "opacity-0"} transition duration-500`}></div>
       <NavBar />
       <SideBar />
       <Cursor />
